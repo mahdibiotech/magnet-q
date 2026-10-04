@@ -1,0 +1,7 @@
+data/
+coffee/
+real/
+__pycache__/
+*.db
+*.pyc
+.venv/

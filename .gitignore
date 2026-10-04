@@ -1,0 +1,8 @@
+data/
+coffee/
+real/
+__pycache__/
+*.pyc
+*.db
+.venv/
+nohup.out

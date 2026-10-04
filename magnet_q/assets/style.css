@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+:root{--ink:#16222A;--bg:#E9EEF0;--panel:#F7F9FA;--accent:#0B5C66;--pink:#C2185B;--line:#C9D3D8}
+@media (prefers-color-scheme:dark){:root{--ink:#E6EEF1;--bg:#12191D;--panel:#1B252B;--line:#2F3E46}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Instrument Sans",system-ui,sans-serif}
+header{display:flex;gap:10px;align-items:center;padding:12px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+h1{font-size:20px;margin:0 12px 0 0;letter-spacing:.02em}h2{font-size:15px;margin:22px 0 6px}
+.spacer{flex:1}.dd{min-width:170px;color:#16222A}
+main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;padding:20px}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+.plot,aside{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px}
+button{font:inherit;padding:6px 12px;border:1px solid var(--accent);background:transparent;color:var(--accent);border-radius:4px;cursor:pointer}
+button:hover{background:var(--accent);color:#fff}button:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+button.primary{background:var(--accent);color:#fff}
+.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.whatif{min-height:56px;margin-top:8px}
+.delta{font-size:19px;font-weight:600;margin-top:4px}.delta span{font-weight:400;font-size:15px}
+.muted{opacity:.7;font-size:13px}
+.row{display:flex;justify-content:space-between;margin-top:10px}
+.gauge{position:relative;height:10px;background:var(--line);border-radius:5px;margin:4px 0 8px;overflow:hidden}
+.fill{height:100%;transition:width .25s}.tick{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);opacity:.55}
+.verdict{font-size:26px;font-weight:600;margin-top:6px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}th{text-align:left;font-weight:600}
+td,th{padding:3px 4px;border-bottom:1px solid var(--line)}.journal{font-size:13px}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+.guide{margin:16px 20px 0;padding:10px 16px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.guide summary{cursor:pointer;font-weight:600}.guide ol{margin:8px 0;padding-left:22px;max-width:80ch}

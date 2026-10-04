@@ -53,6 +53,11 @@ Les six autres bins sont identiques avant et après dans CheckM2.
 - Sur ce bin, CheckM (59,6 %) et CheckM2 (243,5 %) divergent fortement avant curation, et CheckM2 affiche 100 % de complétude avant et après : le gain de complétude ou son coût n'est pas mesurable avec CheckM2 ici.
 - Un marqueur en double signale un conflit entre deux contigs, pas lequel est l'intrus.
 - Pas de couverture, donc la vue GC × couverture est inutilisable sur ce jeu.
-
+## Preuves (dossier preuves/)
+- checkm2_avant_quality_report.tsv : CheckM2 sur les 7 bins d'origine.
+- checkm2_apres_quality_report.tsv : CheckM2 après curation du bin 5.
+- validation_final.csv : estimation de l'outil sans filtre de seuils, contre CheckM (bins d'origine).
+- validation_f0.3.csv, validation_f0.5.csv, validation_f0.7.csv, validation_seuils.csv : même comparaison avec les seuils BUSCO multipliés par 0,3 ; 0,5 ; 0,7 ; 1.
+- validation_apres.csv : estimation de l'outil après curation (facteur 0,3), contre CheckM2.
 ## Fichiers
 `core.py` (logique), `app.py` (interface), `prepare_data.py` (import), `validate_checkm2.py` (comparaison), `report.py` (bilan avant/après), `benchmark.py` (jeu simulé de démonstration uniquement ; ses résultats ne sont pas ceux ci-dessus).
